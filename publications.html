@@ -13,6 +13,14 @@
 		<!--<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
          async defer></script> -->
 
+        <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+        <script> 
+            $(function(){
+              $("#header").load("header.html"); 
+              $("#footer").load("footer.html"); 
+            });
+        </script> 
+        
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -24,21 +32,7 @@
 	<body id="top">
 
 		<!-- Header -->
-			<header id="header" class="skel-layers-fixed">
-				<h1><a href="#">SWAN</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-<!--						<li><a href="index.html">News</a></li>-->
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="index.html">Publications</a></li>
-						<li><a href="index.html">Documentation</a></li>
-						<li><a href="research_team.html">Research Team</a></li>
-						<li><a href="#footer">Contact</a></li>
-						<li><a  target="_blank" href="https://github.com/swandroid/swan-sense/blob/master/docs/SWAN-intro.pdf" class="button special"><i class="icon fa-github"></i>  GITHUB</a></li>
-					</ul>
-				</nav>
-			</header>
+        <div id="header"></div>
 
 			<section  class="wrapper style1">
 				<header class="major">
@@ -66,57 +60,7 @@
             </section>
         
         <!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<div class="row double">
-						<div class="6u">
-							<div class="row collapse-at-2">
-								<div class="6u">
-									<h3>SITE MAP</h3>
-									<ul class="alt">
-										<li><a href="index.html">Home</a></li>
-<!--										<li><a href="#">News</a></li>-->
-										<li><a href="projects.html">Projects</a></li>
-										<li><a href="#">Publications</a></li>
-										<li><a href="#">Documentation</a></li>
-										<li><a href="research_team.html">Research Team</a></li>
-										<li><a href="#footer">Contact</a></li>
-									</ul>
-								</div>
-								<div class="6u">
-									<h3>CONTACT INFORMATION</h3>
-									<ul class="alt">
-										<li><i class="icon fa-map-marker"></i>   Address: De Boelelaan 1105, 1081 HV Amsterdam</li>
-										<li><i class="icon fa-envelope"></i> Email: <img src="images/email.png"></li>
-										<li></li>
-									</ul>
-									<ul class="icons">
-								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a target="_blank" href="https://github.com/swandroid/swan-sense/blob/master/docs/SWAN-intro.pdf" class="icon fa-github"></a></li>
-							</ul>
-								</div>
-							</div>
-						</div>
-
-						
-						<div class="6u">
-							<h2>INTERACTIVE MAP</h2>
-							<div class="google-maps">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.021279563678!2d4.863531215603716!3d52.33376005776725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60a085c443af1%3A0x2df2d7a997eccd84!2sVU+University+Amsterdam!5e0!3m2!1sen!2snl!4v1460488612181" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-							</div>
-							<!-- <a href="#" class="image fit"><img src="images/map.png" alt="" /></a> -->
-						</div>
-					</div>
-					<ul class="copyright">
-						<li>&copy; The Swan Project. All rights reserved.</li>
-						<li>Design: <a href="http://templated.co">TEMPLATED</a> and Patricia Mayo Tejedor</li>
-						<li>Images: <a href="http://unsplash.com">Unsplash</a> and Patricia Mayo Tejedor</li>
-					</ul>
-				</div>
-			</footer>
+        <div id="footer"></div>
         
     </body>
 </html>
